@@ -1,0 +1,77 @@
+body {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+header {
+    background-color: var(--color-b);
+}
+th.bg-th{
+    background-color: var(--color-h) !important;
+}
+td{
+    text-align: center;
+}
+
+.foto_usuario{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.btn_editar {
+    width: 70px;
+    height: 70px;
+    background-color: var(--color-d); 
+    border-radius: 50%;
+    background-image: url('../imagenes/edit.png'); 
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn_editar:hover {
+    background-color: var(--color-e);
+}
+
+.btn {
+    background-color: var(--color-d);
+    border-color: var(--color-d);
+    font-weight: bold;
+}
+
+/* Estilo específico para el botón de cierre del modal */
+.close.btn {
+    background-color: red; /* Cambiar el color de fondo a rojo */
+    border-color: red; /* Cambiar el color del borde a rojo */
+    color: white; /* Cambiar el color del texto a blanco para que sea visible */
+    font-weight: bold;
+}
+
+.close.btn:hover {
+    background-color: rgba(255, 0, 0, 0.258); /* Cambiar el color de fondo a rojo */
+}
+
+.btn:hover {
+    background-color: var(--color-e);
+}
+
+@media (max-width: 767.98px) {
+    .stack-on-mobile {
+        flex-direction: column !important;
+    }
+    .center-text {
+        text-align: center;
+    }
+    .foto_usuario{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    .btn_editar{
+        width: 45px;
+        height: 45px;
+        background-size: 25px;
+    }
+}
